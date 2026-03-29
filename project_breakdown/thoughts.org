@@ -1,0 +1,40 @@
+#+title: Project breakdown
+#+author: Gowtham A R
+
+* Table of contents :TOC:
+- [[#intro][Intro]]
+- [[#goal][Goal]]
+  - [[#inputs][Inputs]]
+  - [[#constraints][Constraints]]
+  - [[#information-in-memory][Information in memory]]
+  - [[#expected-output][Expected output]]
+
+* Intro
+Ok, below I try to describe the goal state. Through this document, My aim is to break down the steps we need to achieve to the goal state, clear milestones and a means to get there.
+
+
+* Goal
+** Inputs
+- Teams A & B: One of the teams playing in IPL
+- Number of transfers left
+- Available Boosters
+- Current IPL Fantasy League points
+- Current ranking
+- Match number
+- A checklist where I can mark which players are present in the playing XI for the current match
+- Current list of players in Fantasy team (should select none if this is the very first selection)
+- Aggressive/Neutral/Conservative (Feature to be added later)
+
+** Constraints
+- Abide by the official IPL Fantasy league rules.
+- 100 points to select 11 players
+- 160 transfers for the first 70 matches
+- The recommended team should take into account future matches
+
+** Information in memory
+- IPL Schedule
+- Player list for each team
+- Player costs for each player to be added into the fantasy team
+
+** Expected output
+- A selection of 11 players that will **maximize the points** to be earned on tomorrow's match while **minimizing the number of transfers**
