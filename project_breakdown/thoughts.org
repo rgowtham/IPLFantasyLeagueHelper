@@ -8,6 +8,7 @@
   - [[#constraints][Constraints]]
   - [[#information-in-memory][Information in memory]]
   - [[#expected-output][Expected output]]
+  - [[#success-criteria][Success criteria]]
 
 * Intro
 Ok, below I try to describe the goal state. Through this document, My aim is to break down the steps we need to achieve to the goal state, clear milestones and a means to get there.
@@ -19,7 +20,8 @@ Ok, below I try to describe the goal state. Through this document, My aim is to 
 - Number of transfers left
 - Available Boosters
 - Current IPL Fantasy League points
-- Current ranking
+- Current ranking (in the league I want to be first)
+- Points of the league leader (Use to decide the aggressiveness of the play)
 - Match number
 - A checklist where I can mark which players are present in the playing XI for the current match
 - Current list of players in Fantasy team (should select none if this is the very first selection)
@@ -28,8 +30,10 @@ Ok, below I try to describe the goal state. Through this document, My aim is to 
 ** Constraints
 - Abide by the official IPL Fantasy league rules.
 - 100 points to select 11 players
-- 160 transfers for the first 70 matches
-- The recommended team should take into account future matches
+- 160 transfers for the first 70 matches (league stage)
+- The recommended team should take into account future matches to minimize the overall transfers (not greedy)
+- Unlimited transfers after the league stage ends
+- 10 transfers after the first qualifier etc
 
 ** Information in memory
 - IPL Schedule
@@ -38,3 +42,7 @@ Ok, below I try to describe the goal state. Through this document, My aim is to 
 
 ** Expected output
 - A selection of 11 players that will **maximize the points** to be earned on tomorrow's match while **minimizing the number of transfers**
+
+** Success criteria
+- **LOCAL**: Be the top player with highest points within the league
+- **GLOBAL**: Be in the top 200 across all the players (Will win a signed IPL Jersey). /Better if within top 20/
